@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Coffees List</title>
+</head>
+<body>
+    <h1>Coffees List</h1>
+
+    <ul>
+    {% for coffee in coffees %}
+        <li>
+            <strong>中文名稱:</strong> {{ coffee.title_cn }} <br>
+            <strong>英文名稱:</strong> {{ coffee.title_en }}
+        </li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>
+
